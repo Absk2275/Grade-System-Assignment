@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-Calculator-Assignment</title>
+    <link  rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <h1>GRADING SYSTEM ASSIGNMENT</h1>
+    <div class="main">
+        
+        <div class="left-container">
+            <nav class="nav">Grading System in JS</nav>
+            <label for="English">English</label>
+            <input type="text" name="english" id="english" required /><br>
+            <label for="math">Math</label>
+            <input type="text" name="math" id="math" required /><br>
+            <label for="physics">Physics</label>
+            <input type="text" name="physics" id="physics" required /><br>
+            <label for="chemistry">Chemistry</label>
+            <input type="text" name="chemistry" id="chemistry" required /><br>
+            <label for="computer">Computer</label>
+            <input type="text" name="computer" id="computer" required /><br>
+            <input type="submit" onclick="Total()" value="Calculate Grade" />
+        </div>
+        <div class="right-container">
+            <div class="total-container">
+                <nav class="nav">Total</nav>
+                <p id="total"></p>
+            </div>
+            <div class="average-container">
+                <nav class="nav">Average</nav>
+                <p id="average"></p>
+            </div>
+            <div class="grade-container">
+                <nav class="nav">Grade</nav>
+                <p id="grade"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
